@@ -35,7 +35,7 @@ a {
   }
   
 /* loupe-search anim*/
-form{
+#top-loupe{
   top: 50%;
   left: 50%;
   transform: translate(-25%,-35%);
@@ -78,16 +78,16 @@ input{
   transition: all 1s;
   }
   
-form:hover{
+#top-loupe:hover{
   width: 200px;
   cursor: pointer;
   }
   
-form:hover input{
+#top-loupe:hover input{
   display: block;
   }
   
-form:hover .fa{
+#toploupe:hover .fa{
   background: #0550FC;
   color: #05DAFC;
   }
