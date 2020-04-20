@@ -15,11 +15,9 @@
 /*************/
 
 .body-beach {
-    position: relative;
     text-align: center;
     margin: 0;
     padding: 0;
-    background-color: #c9e8f7;
 }
 
 
@@ -31,11 +29,6 @@
 }
 
 .main {
-    position: absolute;
-    top: 80%;
-    left: 2%;
-    width: 96%;
-    background-color: white;  
     border-radius: 10px;
 }
 
@@ -176,7 +169,7 @@
 }
 
 .beach-container img {
-    width: 30%;  
+    width: 26%;  
 }
 
 .beach-container img:hover {
@@ -198,7 +191,9 @@
     background-color: white;
 }
 
-
+footer {
+    clear: both;
+}
 /**** ANIMATION ***/
 @-webkit-keyframes rotate-center {
     0% {
