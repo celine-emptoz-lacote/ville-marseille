@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+body {
+  max-width: 1600px;
+  background-color: whitesmoke;
+}
+
+/*** HEADER ***/
+header{
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  height: 130px;
+  border-bottom: 0.5px solid #0550FC;  
+  }
+#toptitle{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  }
+
+#toplogo{
+  margin-top: 20px;
+  }
+  
+a {
+  color: #05DAFC;
+  text-decoration: none;
+  }
+  
+/* loupe-search anim*/
+form{
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%,-35%);
+  transition: all 1s;
+  width: 50px;
+  height: 50px;
+  background: white;
+  box-sizing: border-box;
+  border-radius: 25px; 
+  margin-top: 50px;
+  padding:5px; 
+  }
+  
+input{
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 42.5px;
+  line-height: 30px;
+  outline: none;
+  border: 1px solid #05DAFC;
+  display: none;
+  font-size: 1em;
+  border-radius: 20px;
+  padding: 0 20px; 
+  }
+  
+.fa{
+  box-sizing: border-box;
+  padding: 10px;
+  width: 42.5px;
+  height: 42.5px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  color: #0550FC;
+  text-align: center;
+  font-size: 1.2em;
+  transition: all 1s;
+  }
+  
+form:hover{
+  width: 200px;
+  cursor: pointer;
+  }
+  
+form:hover input{
+  display: block;
+  }
+  
+form:hover .fa{
+  background: #0550FC;
+  color: #05DAFC;
+  }
+  
+/*menu déroulant*/
+.boutonmenuprincipal {
+  display: flex;
+  background-color: white;
+  color: #0550FC;
+  border: none;
+  cursor: pointer;
+  padding: 10px 30px;
+  width: 100%;
+  font-size: 20px;
+  margin-top: 25px;
+  }
+  
+.boutonmenuprincipal:hover {
+  background-color:#0550FC;
+  color: white;
+  }
+
+.menu {
+  position: relative;
+  display: inline-block;
+  }
+
+.menu-child {
+  display: none;
+  background-color:whitesmoke;
+  color: blue;
+  min-width: 40px;
+  }
+
+.menu-child a {
+  padding: 20px;
+  text-decoration: none;
+  display: block;
+  }
+
+.menu:hover .menu-child {
+  display: block;
+  }
+
+.menu li{
+  list-style-type: none;
+  }
+  
+.menu-child a:hover{
+  color: blue;
+  }
+
+/***footer***/
+footer{
+  display: flex;
+  background-color: #0550FC;
+  flex-direction: row;
+  align-items: center;
+  justify-content:space-evenly;
+  width: 100%;
+  height: 400px;
+  }
+  
+#bottomlogo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 100%;
+  width: 100%;
+  }
+  
+#bottom-menu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 14px;
+  letter-spacing: 2px;
+  height: 100%;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+  }
+  
+.menu-b{
+  list-style: none;
+  }
+  
+.menu-b li{
+  padding-top: 15px;
+  }
+  
+.menu-b li a{
+  color: white;
+  }
+  
+footer li a:hover{
+  color: #05DAFC;
+  }
+  
+#socialmedia{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+  width: 100%;
+  }
+  
+.social{
+  padding-top: 15px;
+  }
+  
+#topbutton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  }
+  
+#topbutton a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #0550FC;
+  color: white;
+  display:flex;
+  text-decoration: none;
+  font-size: 12px;
+  width: 50px;
+  height: 50px;
+  padding: 2px 2px;
+  }
+    
+#topbutton a:hover {
+  background: #05DAFC;
+  border: 1px solid  rgba(34, 165, 54, 0.1);
+  color: white;
+  }
+  
+#copyright{
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 25px;
+  font-size: 12px;
+  color: #05DAFC;
+  }
+
+/***RESPONSIVE HEADER + FOOTER***/
+@media (max-width: 640px) {
+  #toptitle{
+    width: 50%;
+    margin-right: 20px;
+  }
+  
+  #socialmedia{
+      flex-direction: column;
+  }
+
+  #socialmedia img{
+    height: 20px;
+    width: auto;
+  }
+
+  #logo{
+    margin-top: 5.5%;
+    width: 30%;
+  }
+  #logo img{
+    width: 40px;
+    height: auto;
+  }
+
+  #copyright{
+    font-size: 9px;
+    text-align: center;
+    margin-top: 10%;
+  
+}
+  @media (min-width: 640px) {
+  
+  }
+  @media (min-width:960px) {
+  
+  }
+  @media (min-width:1100px) {
+  
+  }
+
