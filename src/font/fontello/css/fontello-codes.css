@@ -1,0 +1,8 @@
+
+.icon-address:before { content: '\61'; } /* 'a' */
+.icon-twitter:before { content: '\62'; } /* 'b' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+.icon-instagram:before { content: '\69'; } /* 'i' */
+.icon-pinterest:before { content: '\70'; } /* 'p' */
+.icon-phone:before { content: '\74'; } /* 't' */
+.icon-youtube-play:before { content: '\79'; } /* 'y' */
