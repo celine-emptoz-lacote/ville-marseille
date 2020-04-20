@@ -49,7 +49,7 @@ h1{
     height: 30px;
 }
 
-form{
+.form-contact{
     display: flex;
     flex-direction: column;
     width: 100%;
