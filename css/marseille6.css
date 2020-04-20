@@ -1,0 +1,200 @@
+/*FONT*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*FONT*/
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    
+   
+}
+h1{
+    text-align: center;
+}
+#contact{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f1f2f6;
+    
+    
+    
+}
+.contact-page{
+    display: flex;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.form{
+    width: 50%;
+    height: 100%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.form input{
+    border: none;
+    background: transparent;
+    height: inherit;
+    width: 70%;
+    height: 30px;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-top: 2em;
+
+}
+
+.entry{
+    display: flex;
+    font-size: 1em;
+    margin: 0;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    border-top: 2px solid black;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    opacity: 1;
+}
+.entry:hover, .your-message:hover, .send:hover{
+    opacity: 0.6;
+    color: #0550FC;
+    border-top: 2px solid #0550FC;
+}
+.entry label{
+    width: 20%;
+
+}
+.your-message{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-top: 2px solid black;
+    opacity: 1;
+}
+.your-message label{
+    width: 50%;
+}
+textarea{
+    height: 5rem;
+    background: transparent;
+    border: none;
+}
+
+.send{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid black;
+    padding: 1em 0;
+}
+
+button{
+    background: transparent;
+    border: 2px solid black;
+    padding: 1em;
+    opacity: 1;
+}
+button:hover{
+    opacity: 0.6;
+    color: #0550FC;
+    border: 2px solid #0550FC;
+}
+.info{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: auto;
+}
+.social-icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;   
+}
+.social-icon a{
+    text-decoration: none;
+    
+}
+
+#icon1::before{
+    content:"f";
+    font-family: "fontello";
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #0550FC;
+    margin: 1rem;
+    border-radius: 100%;
+}
+#icon2::before{
+    content:"i";
+    font-family: "fontello";
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #0550FC;
+    margin: 1rem;
+    border-radius: 100%;
+}
+#icon3::before{
+    content:"b";
+    font-family: "fontello";
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #0550FC;
+    margin: 1rem;
+    border-radius: 100%;  
+}
+
+#icon1:hover, #icon2:hover, #icon3:hover{
+    transform: scale(1.4);
+    transition: 1s;
+     
+}
+
+#address::before{
+    content: "a";
+    font-family: "fontello";
+    padding: 2%;
+    font-weight: bold;
+}
+#phone::before{
+    content: "t";
+    font-family: "fontello";
+    padding: 2%;
+    font-weight: bold;
+}
+@media screen and (max-width:480px){
+    .contact-page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .info, .form{
+        width:100%;
+        margin: 0;
+        
+    }
+    form{
+        align-items: center;
+        margin: 0;
+    }
+}
+
+
+
