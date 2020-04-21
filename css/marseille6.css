@@ -1,12 +1,11 @@
 /*FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /*FONT*/
-*{
-    box-sizing: border-box;
-}
+
 body{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     
    
 }
@@ -20,9 +19,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     background: #f1f2f6;
-    
-    
-    
+       
 }
 .contact-page{
     display: flex;
@@ -31,6 +28,9 @@ h1{
     height: 100%;
     margin-top: auto;
     margin-bottom: auto;
+}
+.contact-page p{
+    margin: 1em;
 }
 .form{
     width: 50%;
