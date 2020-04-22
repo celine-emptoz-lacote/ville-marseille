@@ -1,0 +1,18 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2020 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="camera-alt" unicode="&#xe800;" d="M518 386q0 8-5 13t-13 5q-37 0-63-27t-26-63q0-7 5-12t13-6 12 6 5 12q0 23 16 38t38 16q8 0 13 5t5 13z m125-73q0-59-42-101t-101-42-101 42-42 101 42 101 101 42 101-42 42-101z m-572-320h858v71h-858v-71z m643 320q0 89-62 152t-152 63-151-63-63-152 63-151 151-63 152 63 62 151z m-571 358h214v72h-214v-72z m-72-107h858v143h-462l-36-71h-360v-72z m929 143v-714q0-30-21-51t-50-21h-858q-29 0-50 21t-21 51v714q0 30 21 51t50 21h858q29 0 50-21t21-51z" horiz-adv-x="1000" />
+
+<glyph glyph-name="star" unicode="&#xe801;" d="M929 489q0-12-15-27l-202-197 48-279q0-4 0-12 0-11-6-19t-17-9q-10 0-22 7l-251 132-250-132q-12-7-23-7-11 0-17 9t-6 19q0 4 1 12l48 279-203 197q-14 15-14 27 0 21 31 26l280 40 126 254q11 23 27 23t28-23l125-254 280-40q32-5 32-26z" horiz-adv-x="928.6" />
+
+<glyph glyph-name="down-dir" unicode="&#xe802;" d="M571 457q0-14-10-25l-250-250q-11-11-25-11t-25 11l-250 250q-11 11-11 25t11 25 25 11h500q14 0 25-11t10-25z" horiz-adv-x="571.4" />
+
+<glyph glyph-name="thermometer" unicode="&#xf2c7;" d="M357 100q0-45-31-76t-76-31-76 31-31 76q0 34 19 61t52 40v506h72v-506q32-12 52-40t19-61z m72 0q0 43-19 80t-53 63v428q0 45-31 76t-76 32-76-32-31-76v-428q-34-25-53-63t-19-80q0-74 53-126t126-53 126 53 53 126z m71 0q0-103-73-177t-177-73-177 73-73 177q0 102 71 175v396q0 75 53 127t126 52 126-52 53-127v-396q71-73 71-175z m71 321v-71h-107v71h107z m0 143v-71h-107v71h107z m0 143v-71h-107v71h107z" horiz-adv-x="571.4" />
+</font>
+</defs>
+</svg>
