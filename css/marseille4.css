@@ -1,0 +1,286 @@
+/**** FONT ***/
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+/***** FONY **/
+
+/*** TITRE ***/
+.main-rando h1 ,.body-rando h1 , .top-rando h2 , .top-rando h3  {
+    font-family: 'Anton', sans-serif;
+}
+
+.body-rando h1 {
+    color: #05DAFC;
+}
+
+#sormiou h1 , #col h1, #lespennes h1 , #ciotat h1 ,#Bimont h1, #etoile h1{
+    color: black;
+}
+
+.main-rando h4 {
+    color: #76979c;
+}
+/*********/
+
+.body-rando {
+    text-align: center;
+}
+
+.body-rando h1 {
+    margin: 4%;
+}
+
+.main-rando-p1 {
+    width: 90%;
+    margin: auto;
+    line-height: 2em;
+
+}
+
+.photos-rando {
+    width: 90%;
+    margin: 2% auto 0;
+    display: flex;
+    justify-content: center;
+}
+
+.photos-rando img {
+    width: 20%;
+    margin: 1% 0 0;
+    padding: 0.5%;
+    background-color: black;
+}
+
+.nav-rando {
+    width: 75.6%;
+    margin: auto;
+}
+.nav-rando > ul {
+    display: flex;
+    background-color: #8c8a8a;  
+}
+
+.nav-rando > ul li {
+    width: 100%;
+    margin: auto;
+    padding: 1%;
+    list-style: none;
+    position: relative;
+}
+
+@media screen and (max-width:735px) {
+    .photos-rando {
+        width: 100%;
+        justify-content: space-evenly;
+       
+    }
+    .nav-rando {
+        width: 100%; 
+        font-size: 10PX;
+    }
+}
+
+@media screen and (min-width:736px) and (max-width:979px) {
+    .nav-rando { 
+        font-size: 12PX;
+    }
+}
+
+.nav-rando ul li .sous {
+    position: absolute;
+    top: 100%;
+    left:0%;
+    width: 100%;
+    background-color: white;
+    border: 0.5px solid gray;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 1.5s ease-in-out;
+}
+
+.nav-rando ul li .sous a:hover {
+    color: #05DAFC;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.nav-rando ul li:hover .sous {
+    height: auto;
+    max-height: 100vh;
+}
+
+.nav-rando a {
+    color: #8c8a8a;
+}
+
+.arrow::before {
+    font-family: 'fontello';
+    content: "\e802";
+
+}
+
+.div-img-fixe {
+    background-image: url(../src/img/randonnée/fixe.jpg);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;  
+}
+
+.top-rando {
+    margin-top: 2%;
+    padding: 3% 0;
+    background-color: rgb(221, 222, 228);
+}
+
+.top-rando div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.top-rando  section{
+    border-bottom: #bbbbbb 2px solid;
+    width: 30%;
+    margin: 1%;
+    padding: 0.5%;
+}
+
+.top-rando section img {
+    width: 85%;
+    padding: 0.5%;
+    border: 1px solid black;
+}
+
+.top-rando a {
+    color: #8c8a8a; 
+}
+
+.cursor {
+    cursor: help;
+}
+
+@media screen and (max-width:800px) {
+    .top-rando a {
+        font-size: 12px;
+    }
+}
+
+#sormiou , #ciotat , #Bimont, #etoile , #col , #lespennes{
+    display: none;
+    width:95%;
+    margin: 4% auto; 
+    padding: 1%;
+    background-color: rgb(221, 222, 228);
+    border-radius: 20px;
+    box-shadow: 8px 8px 8px #aaa;
+}
+
+#sormiou:target , #ciotat:target , #Bimont:target , #etoile:target , #col:target , #lespennes:target {
+    display: block;
+} 
+
+#sormiou ul , #ciotat ul ,#Bimont ul, #etoile ul, #col ul,#lespennes ul{
+    display: flex;
+    justify-content: center;
+}
+
+#sormiou li , #ciotat li , #Bimont li, #etoile li, #col li, #lespennes li{
+    width: 30%;
+    list-style: none;
+}
+
+.picto {
+    width: 5%;
+}
+
+.a_top:hover {
+    cursor: auto;
+}
+
+.a_top img:hover {
+    cursor: auto;
+}
+
+.picto:hover {
+    animation: bounce-top 4s;
+}
+
+span::before {
+    font-family: 'fontello';
+    content: "\e801";
+}
+
+.span1 {
+    color: #0550FC;
+}
+
+.span2 {
+    color: #ccc5c5;
+}
+
+#sormiou p , #ciotat p , #Bimont p, #etoile p, #col p, #lespennes p{
+    margin: 2% auto;
+}
+
+.map {
+    width: 30%;
+    margin: 2% auto 0;
+}
+
+/***** ANIMATION ****/
+@keyframes bounce-top {
+    0% {
+        transform: translateY(-45px);
+        transform: translateY(-45px);
+        animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+    24% {
+      opacity: 1;
+    }
+    40% {
+        transform: translateY(-24px);
+        transform: translateY(-24px);
+        animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    65% {
+        transform: translateY(-12px);
+        transform: translateY(-12px);
+        animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    82% {
+        transform: translateY(-6px);
+        transform: translateY(-6px);
+        animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    93% {
+        transform: translateY(-4px);
+        transform: translateY(-4px);
+        animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+    25%,
+    55%,
+    75%,
+    87% {
+        transform: translateY(0px);
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+    100% {
+        transform: translateY(0px);
+        transform: translateY(0px);
+        animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+  }
