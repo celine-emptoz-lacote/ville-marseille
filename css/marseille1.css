@@ -18,15 +18,7 @@ body {
   background-size: cover;
   height: 450px;
   }
-#main-title{
-  display: flex;
-  background-color: aqua;
-  height: 120px;
-  font size:40px;
-  color:white;
-}
 
-  
 h1{
   font-size: 3em;
   font-weight: normal;
@@ -34,18 +26,19 @@ h1{
   }
   
 /* title styles */
-.banner-title span{
+#banner-title span{
   position: relative;
   overflow: hidden;
   display: block;
   line-height: 1.2;
   border: 3px solid white;
-  margin-left: 10%;
+  width: 60%;
+  margin-left: 25%;
   margin-top:10%;
   text-align: center;
   }
   
-  .banner-title span::after{
+#banner-title span::after{
   content: '';
   position: absolute;
   top: 0;
@@ -57,7 +50,7 @@ h1{
   transform: translateX(-101%);
   }
   
-  .banner-title span::before{
+#banner-title span::before{
   content: '';
   position: absolute;
   top: 0;
@@ -69,13 +62,13 @@ h1{
   transform: translateX(0);
   }
   
-  .banner-title span:nth-of-type(1)::before,
-  .banner-title span:nth-of-type(1)::after{
+  #banner-title span:nth-of-type(1)::before,
+  #banner-title span:nth-of-type(1)::after{
       animation-delay: 1s;
   }
   
-  .banner-title span:nth-of-type(2)::before,
-  .banner-title span:nth-of-type(2)::after{
+  #banner-title span:nth-of-type(2)::before,
+  #banner-title span:nth-of-type(2)::after{
       animation-delay: 1.5s;
   }
   
@@ -90,26 +83,389 @@ h1{
   }
 
 /***CONTENT***/
-.hist-part1{
+/*PART I*/
+#hist-part1{
     display: flex;
-    background-color: aqua;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
     color:#0550FC;
-    height: 400px;
 }
-.hist-part2{
-    display: flex;
-    background-color:white;
-    color:#0550FC;
-    height: 400px;
+
+#hist-title{
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  margin-bottom: 20px;
+  color: black;
+}
+
+#hist-intro{
+  display: flex;
+  width: 80%;
+  text-align: center;
+  color:#05DAFC;
+  font-size: 18px;
+}
+
+#hist-story{
+  display: flex;
+  width: 90%;
+  background-color: #D0F3F4;
+  margin-top: 2.5%;
+  padding: 20px 30px;
+  color: #5E6666;
+}
+
+#hist-story-text{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding: 20px 30px;
+  font-size: 14px;
+}
+
+#inter{
+  font-size: 18px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+}
+
+#hist-vid{
+  width: 60%;
+}
+
+
+/*PART II*/
+#hist-part2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color:#0550FC;
+}
+
+#hist-title2{
+display: flex;
+font-size: 30px;
+justify-content: center;
+margin-bottom: 20px;
+color: black;
+}
+
+#hist-intro2{
+display: flex;
+width: 80%;
+text-align: center;
+color:#05DAFC;
+font-size: 18px;
+}
+
+#hist-story2{
+display: flex;
+width: 90%;
+margin-top: 2.5%;
+padding: 20px 30px;
+color: black;
+}
+
+#hist-story2-text{
+display: flex;
+flex-direction: column;
+width: 35%;
+padding: 20px 30px;
+font-size: 14px;
+}
+
+#inter2{
+font-size: 18px;
+padding-top: 10px;
+padding-bottom: 10px;
+color: black;
+}
+
+.hist-section{
+  display: flex;
+  background-image: url(https://images.unsplash.com/photo-1567430103716-63255508cb74?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 55%;
+  background-color: white;
+  overflow: hidden;
+  padding:100px 0;
+  margin-top: 2.5%;
+}
+
+#inner-container{
+  width:55%;
+  margin-left: 35%;
+  margin-top: 5%;
+  height: 250px;
+  padding: 50px;
+  border: 2px solid black;
+  position: absolute;
+  background-color: white;
+  overflow: scroll;
+}
+
+#inner-container h4{
+  margin-bottom:25px;
+  font-size:30px;
+  font-weight: 900;
+}
+
+#hist-part3{
+  display: flex;
+}
+
+#SLIDE_BG{
+  width:40%;
+  height:500px;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  backface-visibility: hidden;
+  animation: slideBg 8s linear infinite 0s;
+  animation-timing-function:ease-in-out;
+  background-image: url('https://images.unsplash.com/photo-1494635437270-3b11b226dd80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60');
+}
+
+@keyframes slideBg{
+  0%{background-image: url("https://images.unsplash.com/photo-1494635437270-3b11b226dd80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60");}
+  25%{background-image: url("https://images.unsplash.com/photo-1522489584042-4b5359232258?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60");}
+  50%{background-image: url("https://images.unsplash.com/photo-1519110641722-0437c3a06d6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60");}
+  75%{background-image: url("https://images.unsplash.com/photo-1533376050980-236257b0b66a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60");}
+  100%{background-image: url("https://images.unsplash.com/photo-1565396387984-2e4f01acb1f9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=900&q=60");}
+}
+
+
+
+
+
+/***CHRONOLOGIE***/
+.banner-title{
+  font-size: 25px;
+ }
+ 
+#chronologie{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.hist-text{
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  text-align: justify;
+  letter-spacing: 1px;
+  overflow: scroll;
+}
+
+.content-img1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+#section-hist-title{
+  font-size: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 2px;
+  color: #059EFC;
+}
+
+.collapse-content {
+  width: 70%;
+  margin: auto;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.collapse {
+  background: #fff;
+}
+
+.collapse a {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.9rem 1.8rem;
+  color: #fff;
+  position: relative;
+}
+
+.collapse a.resume1 {
+  background: #0315CA ;
+}
+
+.collapse a.resume2 {
+  background: #0550FC;
+}
+
+.collapse a.resume3 {
+  background: #059EFC;
+}
+
+.collapse a.resume4 {
+  background: #1dabdd;
+}
+.collapse a.resume5 {
+  background: #05DAFC;
+}
+.collapse a.resume6 {
+  background: #A1FAFE;
+}
+
+.collapse a:before {
+  content: "";
+  border-top: 7px solid #fff;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+
+.inner-content {
+  padding: 1.8rem;
+  margin-left: 7%;
+}
+
+.content {
+  max-height: 0em;
+  transition: 0.3s linear 0s;
+  overflow: hidden;
+}
+
+.collapse + .collapse a {
+  border-top: 1px solid rgba(255, 255, 255, 0.7);
+}
+
+.content-title {
+  margin-bottom: 15px;
+}
+
+.collapse:target .content {
+  max-height: 1000px;
+}
+
+.collapse:target a:before {
+  transform: rotate(-90deg);
+}
+
+.content-img{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom:40px;
+}
+.content-image{
+  width: 90%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  h1{
+    font-size: 25px;
+  }
+  #banner-title{
+    margin-left: 10%;
+  }
+  .collapse-content {
+    width: 80vw;
+    margin: auto;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  }
+  #chronologie{
+    flex-direction: column;
+  }
+  #hist-story{
+    flex-direction: column;
+    width: 80%;
+  }
+  #hist-story-text{
+    width: 80%;
+  }
+  #hist-vid{
+    width: 100%;
+  }
+  #hist-title{
+    font-size: 18px; 
+    margin-left: 20px;
+    text-align: center;
+  }
+  .hist-text{
+    text-align: center;
+    font-size: 13px;
+  }
+  #section-hist-title{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+  }
+  #hist-part3{
+    flex-direction: column;
+  }
+  #hist-title2{
+    font-size: 16px; 
+    margin-left: 20px;
+    text-align: center;
+  }
+
+  #SLIDE_BG{
+    width: 100%;
+  }
+
+  #inner-container{
+  margin: 20px 35px;
+  position: static;
+  }
+
+ 
+}
+@media (max-width: 425px) {
+  body {
+    line-height: 1.3;
+  }
+  .collapse-content {
+    width: 80vw;
+  }
+  .inner-content {
+    padding: 1.2rem;
+  }
+  .inner-content h3 {
+    margin-bottom: 0.3rem;
+  }
+}
+@media (max-width: 320px) {
+  body {
+    line-height: 1.3;
+  }
+  .collapse-content {
+    width: 80vw;
+  }
+  .inner-content {
+    padding: 0.8rem;
+  }
+  .inner-content h3 {
+    margin-bottom: 0.3rem;
+  }
 }
 
 
 
 /***RESPONSIVE HEADER + FOOTER***/
 @media (max-width: 640px) {
-    .banner-title{
-     font-size: 25px;
-    }
     
    
   
