@@ -8,7 +8,7 @@
 body {
   max-width: 1600px;
   background-color: white;
-  color:black
+  text-decoration:none;
 }
 
 /***bannière***/
@@ -17,7 +17,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 400px;
+  height: 450px;
   background: url(https://images.unsplash.com/photo-1536482252533-5c45502f7aa3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80);
   background-size: cover;
   background-repeat: no-repeat;
@@ -34,7 +34,7 @@ h1{
 #description{
   display: flex;
   width: 70%;
-  background-color: rgba(5, 218, 252, 0.5);
+  background-color: rgba(5, 218, 252, 0.4);
   padding: 20px;
   color: white;
 }
@@ -138,13 +138,57 @@ th, td {
 .localisation{
   margin-top: 10px;
   font-size: 12px;
-  color: #7F9BA9;
+  color: rgba(5, 80, 252, 0.4);
 }
 .open{
   margin-top: 5px;
   font-size: 11px;
-  color: #C0C0C0;
+  color: rgba(5, 218, 252, 0.5);
 }
+
+/*BUTTON TABLEAU*/
+.container{
+  text-align: center;
+  margin-top: 10px;
+}
+.btn a{
+  color: #0550FC;
+}
+.container a:hover{
+  color: white;
+}
+.btn{
+  border:1px solid #0550FC;
+  background: none;
+  padding: 7.5px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #0550FC;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+.btn:hover{
+  color: #FFF;
+  z-index: 1;
+}
+.btn::before{
+  content:"";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #0550FC;
+  transition: 0.8s;
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+.btn:hover::before{
+  height: 180%;
+  z-index: -1;
+}
+
+
 
 
 
@@ -162,6 +206,10 @@ th, td {
   th, td {
     font-size: 11px;
     padding: 10px;
+  }
+  .btn{
+    font-size: 12px;
+    padding: 5px 10px;
   }
 }
 @media (max-width: 425px) {
