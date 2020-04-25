@@ -21,7 +21,6 @@
 /*********/
 
 .body-rando {
-    background-color:;
     text-align: center;
 }
 
@@ -84,6 +83,7 @@
         font-size: 12PX;
     }
 }
+
 .nav-rando ul li .sous {
     position: absolute;
     top: 100%;
@@ -196,6 +196,7 @@
 .picto {
     width: 5%;
 }
+
 .a_top:hover {
     cursor: auto;
 }

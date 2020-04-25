@@ -43,6 +43,11 @@
     color: #0550FC;
 }
 
+
+.parasol {
+    width: 4%;
+}
+
 .main-div-presentation {
     display: flex;
     justify-content: space-around;
@@ -143,6 +148,9 @@
     color: white;
 }
 
+.plage {
+    width: 5%;
+} 
 .beach-p{
     width: 80%;
     margin: 1% auto;
