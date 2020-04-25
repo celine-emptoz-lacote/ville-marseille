@@ -21,6 +21,7 @@
 /*********/
 
 .body-rando {
+    background-color:;
     text-align: center;
 }
 
@@ -155,7 +156,11 @@
 }
 
 .top-rando a {
-    color: #8c8a8a;
+    color: #8c8a8a; 
+}
+
+.cursor {
+    cursor: help;
 }
 
 @media screen and (max-width:800px) {
@@ -190,6 +195,13 @@
 
 .picto {
     width: 5%;
+}
+.a_top:hover {
+    cursor: auto;
+}
+
+.a_top img:hover {
+    cursor: auto;
 }
 
 .picto:hover {
